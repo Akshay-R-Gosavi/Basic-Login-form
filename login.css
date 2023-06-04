@@ -1,0 +1,99 @@
+/*login.css (reset)*/
+* {
+  box-sizing: border-box;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+body,
+html {
+  height: 100%;
+}
+
+a,
+button {
+  cursor: pointer;
+}
+
+/*login.css*/
+@keyframes animate-background {
+  100% {
+    background-position: 100% 100%;
+  }
+}
+
+body {
+  display: grid;
+  place-items: center;
+  margin: 0;
+  padding: 0 24px;
+  background-image: url("World Map.svg");
+  background-repeat: no-repeat;
+  background-color: #ffffff;
+  background-size: cover;
+  animation: animate-background linear 30s infinite;
+}
+
+@media (width >= 500px) {
+  body {
+    padding: 0;
+  }
+}
+
+.login-card {
+  width: 100%;
+  padding: 70px 30px 44px;
+  border-radius: 24px;
+  background: #ffffff;
+  text-align: center;
+}
+
+@media (width >=500px) {
+  .login-card {
+    margin: 0;
+    width: 400px;
+  }
+}
+
+.login-card > h2 {
+  margin: 0 0 12px;
+  font-size: 36px;
+  font-weight: 600;
+}
+
+.login-card > h3 {
+  margin: 0 0 30px;
+  font-weight: 500;
+  font-size: 15px;
+  color: rgba(0, 0, 0, 0.38);
+}
+
+.login-form {
+  width: 100%;
+  margin: 0;
+  display: grid;
+  gap: 16px;
+}
+
+.login-form > a {
+  color: #216ce7;
+}
+
+.login-form > input,
+.login-form > button {
+  width: 100%;
+  height: 56px;
+  padding: 0 16px;
+  border-radius: 8px;
+}
+
+.login-form > input {
+  border: 2px solid rgb(79, 116, 217);
+}
+.login-form > button {
+  width: 100%;
+  border: 0;
+  border: 0;
+  background: #216ce7;
+  color: #f9f9f9;
+  font-weight: 600;
+}
